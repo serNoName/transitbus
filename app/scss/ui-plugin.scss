@@ -1,0 +1,121 @@
+.slick {
+    &-dots {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        justify-content: center;
+        margin-top: 24px;
+        button {
+            text-indent: -9999px;
+            width: 8px;
+            height: 8px;
+            border-radius: 0;
+            border: none;
+            background-color: $light-grey;
+            cursor: pointer;
+            transition: .1s width ease-in-out,.1s background-color ease-in-out;
+        }
+        li.slick-active {
+            button {
+                width: 16px;
+                background-color: $secondary;
+            }
+        }
+    }
+}
+.review__sliper  {
+    .slick {
+        &-list {
+            overflow: visible;
+        }
+        &-arrow {
+            display: none !important;
+        }
+    }
+}
+.transport__slider   {
+    .slick {
+        &-arrow {
+            display: none !important;
+        }
+    }
+}
+.ui-datepicker {
+    background-color: $dark;
+    padding: 0;
+    color: $white;
+    border: 1px solid $light-grey;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    thead {
+        background-color: $black;
+        border: 1px solid $grey;
+        border-right: none;
+        border-left: none;
+    }
+    tbody {
+        padding-top: 2px;
+    }
+    a {
+        color: $white;
+    }
+    &-prev, &-next {
+        cursor: pointer;
+        background: url(../images/sprite.svg#arrow) center center no-repeat;
+        background-size: 22px;
+    }
+    &-next {
+        transform: rotate(180deg)
+    }
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center;
+    min-height: 24px;
+    min-width: 24px;
+    transition: .1s background-color ease-in-out;
+}
+td a.ui-state-hover {
+    // color: $secondary;
+    background-color: $primary;
+}
+.ui-menu {
+    background-color: $dark;
+    border: 2px solid $light-grey;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: $white;
+    .ui-menu-item-wrapper {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        padding: 4px 4px 4px 0.5em;
+    }
+    &-item {
+        // padding: 0 !important;
+        &:not(.ui-autocomplete-category){
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+}
+.ui-autocomplete {
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &-category {
+        cursor: default !important;
+        background: $black;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: .8em !important;
+        &:not(:first-of-type) {
+            border-top: 2px solid $light-grey;
+        }
+    }
+    .ui-state-active {
+        margin: 0;
+    }
+    // &:not(.ui-autocomplete-category) {
+    //     &:hover {
+    //         background-color: $primary;
+    //     }
+    // }
+}

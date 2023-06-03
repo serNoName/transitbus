@@ -1,0 +1,27 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/swiper/swiper';
+
+@import 'fonts.scss';
+@import '_variebles.scss';
+@import '_text.scss';
+@import '_animation.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.no-scroll {
+    overflow: hidden
+}
+
+@import 'header.scss';
+@import 'section.scss';
+@import 'ui.scss';
+@import 'ui-plugin.scss';
+@import 'form.scss';
+@import 'footer.scss';
+@import 'pop-up.scss';
+
+@import 'media.scss';

@@ -1,0 +1,407 @@
+@media (max-width: 1240px) {
+    .container {
+        padding: 0 10px;
+    }
+    .cols-2 {
+        &_promo {
+            grid-template-columns: auto minmax(320px, 480px);
+            gap: 32px;
+        }
+        &_transport {
+            grid-template-columns: 480px auto;
+            gap: 32px;
+
+        }
+        &_advantages {
+            grid-template-columns: 420px auto;
+        }
+    }
+    .col {
+        &_transport {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .simple-text {
+        &_advantages {
+            ul {
+                li {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .cols-3 {
+        gap: 28px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .h2 {
+        font-size: 48px;
+    }
+    .header {
+        padding: 8px 0;
+        &__inner {
+            gap: 16px;
+        }
+    }
+    .lang {
+        gap: 12px;
+    }
+    .nav {
+        padding-left: 16px;
+        &__list {
+            gap: 12px;
+        }
+        &__link {
+            font-size: 20px;
+        }
+    }
+    .section {
+        padding-top: 60px;
+        padding-bottom: 72px;
+    }
+    .review {
+        padding-top: 12px;
+    }
+    .promo {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .cols-2 {
+        &_promo {
+            grid-template-columns: 100%;
+            gap: 64px;
+        }
+        &_transport {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 64px;
+        }
+        &_advantages {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 64px;
+        }
+    }
+    .transport-card__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .cols-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .mailing {
+        &__content {
+            flex-direction: column;
+            padding: 12px 0;
+            padding-bottom: 16px;
+            gap: 8px;
+        }
+        &__form {
+            flex-direction: row-reverse;
+            justify-content: start;
+        }
+        &__wrapper {
+            gap: 4px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding-top: 20px;
+            padding-bottom: 28px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 52px;
+        &_single {
+            font-size: 48px;
+            // line-height: 1;
+        }
+    }
+    .h4 {
+        font-size: 24px;
+    }
+    .review-card {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+    .cols-2 {
+        &_transport {
+            gap: 32px
+        }
+    }
+    .news {
+        &__img {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .header {
+        &__inner {
+            gap: 32px;
+        }
+    }
+    .nav {
+        padding: 0;
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        right: calc(100vw + 5px);
+        border: none;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: $black;
+        padding-left: 32px;
+        &__close {
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            background: url(../images/sprite.svg#close) center center no-repeat;
+            background-size: 80px;
+        }
+        &__list {
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 48px;
+        }
+        &__link {
+            opacity: .8;
+            font-size: 36px;
+            &::before {
+                display: none;
+            }
+        }
+        &_active {
+            transition: .2s transform ease-in-out;
+            transform: translateX(calc(100% + 5px));
+        }
+    }
+    .burger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 48px;
+        width: 48px;
+        border-radius: 0;
+        border: none;
+        background-color: transparent;
+        justify-content: space-around;
+        span {
+            display: block;
+            background-color: $primary;
+            width: 100%;
+            height: 4px;
+            transition: .2s opacity ease-in-out;
+        }
+        &_active {
+            span {
+                &:nth-child(1) {
+
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(1) {
+
+                }
+            }
+        }
+    }
+    .promo {
+        &_single {
+            padding-bottom: 60px;
+            padding-top: 100px;
+            min-height: 360px;
+        }
+    }
+    .review__sliper .slick-list {
+        overflow: hidden;
+    }
+}
+@media (max-width: 576px) {
+    .h1 {
+        &_single {
+            font-size: 40px;
+        }
+    }
+    .cols-3 {
+        grid-template-columns: 1fr;
+    }
+    .transport-card__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .simple-text_advantages ul li {
+        font-size: 22px;
+        &:before {
+            top: 10px;
+        }
+    }
+    .form_promo {
+        padding: 32px 20px 40px 20px;
+    }
+    .footer {
+        &__logo {
+            height: 40px;
+        }
+        &__btn-write {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .section {
+        padding-top: 48px;
+        padding-bottom: 56px;
+    }
+    .header {
+        &__logo {
+            width: 120px;
+            height: 26px;
+        }
+        &__inner {
+            gap: 16px;
+        }
+    }
+    .burger {
+        width: 32px;
+        height: 32px;
+    }
+    .h1 {
+        font-size: 48px;
+        &_single {
+            font-size: 32px;
+        }
+    }
+    .h2 {
+        font-size: 40px;
+        &_section {
+            margin-bottom: 20px;
+        }
+    }
+    .h4 {
+        font-size: 20px;
+    }
+    .p {
+        &_form {
+            margin-bottom: 20px
+        }
+        &_mailing {
+            font-size: 16px;
+        }
+    }
+    .nav {
+        &__link {
+            font-size: 36px;
+        }
+        &__close {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    .promo {
+        padding-top: 80px;
+        &_single {
+            padding-bottom: 28px;
+        }
+    }
+    .form {
+        &__wrapper {
+            gap: 20px;
+        }
+        &_promo {
+            padding: 24px 16px 20px 16px;
+        }
+    }
+    .mailing {
+        &__img {
+            width: 64px;
+        }
+        &__inner {
+            gap: 2px;
+        }
+        &__form {
+            flex-direction: column-reverse;
+            align-items: start;
+        }
+    }
+    .review-card {
+        padding: 0 6px;
+    }
+    .line {
+        margin-bottom: 20px;
+        &_review {
+            margin: 0;
+        }
+    }
+    .simple-text {
+        &_advantages {
+            ul {
+                gap: 16px;
+                li {
+                    font-size: 20px;
+                    &::before {
+                        top: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .cols-2_advantages {
+        gap: 48px;
+    }
+    .pop-up {
+        &__card {
+            width: 100%;
+            padding: 24px 16px 20px 16px;
+        }
+        &__content {
+            gap: 16px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .h1 {
+        font-size: 40px;
+        &_single {
+            font-size: 32px;
+        }
+    }
+    .h2 {
+        font-size: 32px;
+    }
+    .h4 {
+        &_promo {
+            font-size: 18px;
+        }
+        &_form {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+    }
+    .btn_promo {
+        max-width: 100%;
+    }
+    .line {
+        &_form {
+            margin-bottom: 12px;
+        }
+    }
+    .p {
+        &_form {
+            font-size: 16px;
+        }
+    }
+}

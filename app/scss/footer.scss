@@ -1,0 +1,127 @@
+.footer {
+    background-color: $dark;
+    &__wrapper {
+        padding-top: 32px;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__line {
+        width: 100%;
+        height: 1px;
+        background-color: $light-grey;
+        opacity: .5;
+    }
+    &__logo {
+        vertical-align: middle;
+    }
+    &__label {
+        color: $white;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 48px ;
+    }
+    &__btn-write {
+        border: none;
+        background: transparent;
+        position: relative;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%; /* 26/22 */
+        color: $primary;
+        height: fit-content;
+        cursor: pointer;
+        user-select: none;
+        transition: .1s opacity ease-in-out;
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 32px;
+        &_politics{
+            gap: 16px;
+        }
+    }
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: $primary;
+        transition: .1s opacity ease-in-out, .1s color ease-in-out;
+        padding-left: 22px;
+        &:hover {
+            opacity: .8;
+        }
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: url(../images/sprite.svg#phone) center center no-repeat;
+        }
+        &_email {
+            &:before {
+                background-image: url(../images/sprite.svg#mail);
+            }
+        }
+        &_politics {
+            font-size: 14px;
+            color: $light-grey;
+            padding: 0;
+            &::before {
+                display: none;
+            }
+            &:hover {
+                color: $light;
+            }
+        }
+    }
+}
+.mailing {
+    background-color: $black;
+    border-width: 4px 0px;
+    border-style: solid;
+    border-color: $primary;
+    box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.25);
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 16px;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+    &__form {
+        display: flex;
+        gap: 12px;
+        height: 100%;
+        align-items: center;
+    }
+}

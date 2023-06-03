@@ -1,0 +1,30 @@
+.form {
+    padding: 40px 36px 48px 36px;
+    background: $black;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &_pop-up {
+        padding: 0;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    &_promo {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}

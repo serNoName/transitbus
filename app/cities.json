@@ -1,0 +1,11 @@
+[
+  { "label": "Київ", "category": "Україна" },
+  { "label": "Одеса", "category": "Україна" },
+  { "label": "Львів", "category": "Україна" },
+  { "label": "Варшава", "category": "Польща" },
+  { "label": "Катовіце", "category": "Польща" },
+  { "label": "Люблін", "category": "Польща" },
+  { "label": "Берлін", "category": "Германія" },
+  { "label": "Мюнхен", "category": "Германія" },
+  { "label": "Бремен", "category": "Германія" }
+]

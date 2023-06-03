@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #F44336;
+    --secondary-color: #FFEB3B;
+    --light-color: #fafafa;
+    --white-color: #fff;
+    --light-grey-color: #616161;
+    --grey-color: #424242;
+    --black-color: #242424;
+    --dark-color: #1D1D1D;
+    --blue-color: rgba(0, 133, 255, 1);
+}
+$primary: var(--primary-color);
+$secondary: var(--secondary-color);
+$light: var(--light-color);
+$white: var(--white-color);
+$light-grey: var(--light-grey-color);
+$grey: var(--grey-color);
+$black: var(--black-color);
+$dark: var(--dark-color);
+$blue: var(--blue-color);
